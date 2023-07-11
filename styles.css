@@ -1,3 +1,6 @@
+footer{
+    text-align: left;
+}
 #page {
   display: grid;
   width: 100%;
@@ -5,27 +8,29 @@
   grid-template-areas:
     "head head"
     "nav  main"
-    "nav  foot";
+    "foot  foot";
   grid-template-rows: 50px 1fr 30px;
   grid-template-columns: 150px 1fr;
+  background-color: black;
+  text-align: center;
 }
 
 #page > header {
   grid-area: head;
-  background-color: #8ca0ff;
+  background-color: silver;
 }
 
 #page > nav {
   grid-area: nav;
-  background-color: #ffa08c;
+  background-color: purple;
 }
 
 #page > main {
   grid-area: main;
-  background-color: #ffff64;
+  background-color: black;
 }
 
 #page > footer {
   grid-area: foot;
-  background-color: #8cffa0;
+  background-color: silver;
 }
