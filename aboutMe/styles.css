@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
-footer{
-    text-align: left;
+footer {
+  text-align: left;
 }
 #page {
   display: grid;
   width: 100%;
-  height: 800px;
+  height: auto;
   grid-template-areas:
     "head head"
     "nav  main"
@@ -14,6 +14,8 @@ footer{
   grid-template-columns: 150px 2fr;
   background-color: black;
   text-align: center;
+  font-family: system-ui;
+  background-image: url("../images/brooklyn.jpeg");
 }
 
 #page > header {
@@ -35,8 +37,7 @@ footer{
   grid-area: foot;
   background-color: silver;
 }
-ul{
-  
+ul {
   justify-content: space-around;
   list-style-type: none;
   text-align: left;
@@ -46,7 +47,16 @@ ul{
   width: 100%;
   padding: 0;
 }
-body{
+body {
   background-color: silver;
 }
-
+.centered {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 25px auto;
+  width: 75%;
+}
+.footer {
+  font-family: system-ui;
+}

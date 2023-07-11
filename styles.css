@@ -9,12 +9,12 @@ footer{
   grid-template-areas:
     "head head"
     "nav  main"
-    "foot  foot";
+    "nav  foot";
   grid-template-rows: 50px 2fr 30px;
   grid-template-columns: 150px 2fr;
-  background-color: black;
   text-align: center;
   background-image: url("./images/galaxy.webp");
+  font-family: system-ui;
    
 }
 
@@ -30,12 +30,13 @@ footer{
 
 #page > main {
   grid-area: main;
-  background-color: black;
+  
 }
 
 #page > footer {
   grid-area: foot;
   background-color: silver;
+  font-family: system-ui;
 }
 ul{
   
@@ -53,8 +54,11 @@ body{
 
 }
 .card {
+  color: antiquewhite;
+  font-family: system-ui;
   border: 3px solid purple;
   padding: 25px;
+  background-color: black;
 }
 .centered {
   display: grid;
@@ -63,4 +67,10 @@ body{
   margin: 25px auto;
   width: 75%;
 }
-
+.footer{
+  font-family: system-ui;
+}
+img{
+  width: 200px;
+}
+a, a:hover, a:active, a:visited { color: white; }
