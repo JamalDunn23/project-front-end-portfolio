@@ -5,7 +5,7 @@ footer{
 #page {
   display: grid;
   width: 100%;
-  height: 800px;
+  height: auto;
   grid-template-areas:
     "head head"
     "nav  main"
@@ -14,6 +14,8 @@ footer{
   grid-template-columns: 150px 2fr;
   background-color: black;
   text-align: center;
+  background-image: url("./images/galaxy.webp");
+   
 }
 
 #page > header {
@@ -48,9 +50,17 @@ ul{
 }
 body{
   background-color: silver;
+
 }
 .card {
-  border: 3px solid #4f7d5d;
+  border: 3px solid purple;
   padding: 25px;
+}
+.centered {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 25px auto;
+  width: 75%;
 }
 
