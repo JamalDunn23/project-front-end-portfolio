@@ -3,20 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stars of Star Wars</title>
-    <link rel="stylesheet" href="styles.css" />
     <script src="app.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Character</title>
   </head>
+
   <body>
-    <section id="page">
-      <header>Stars of Star Wars</header>
+    <header>
+      <h1>Character Mash Up!</h1>
       <nav>
         <ul>
-          <li><a  href="../index.html" style="text-decoration: none;">Home</a></li>
+          <li><a class="homeLink" href="../index.html" style="text-decoration: none;">Home</a></li>
         </ul>
       </nav>
-      <main>Main area</main>
-      <footer>© 2023 The Pressures Of, LLC.</footer>
-    </section>
+    </header>
+    <main>
+        <div class="container">
+            <p>
+                <h3>Mash Up Character Info For Fun!</h3>
+                <p>
+                  <strong>WHATS GOODIE!</strong><br/>Mix and Match from the options below to mash! character infomation!
+                </p>
+                <form id="user_input">
+                  <label>First Name</label>
+                  <select name = "first_name" id = "first_name">
+                    <option></option>
+                    <option value="Luke">Luke</option>
+                    <option value="Darth">Darth</option>
+                    <option value="Obi">Obi</option>
+                    <option value="R2">R2</option>
+                    <option value="C">C</option>
+                  </select>
+                  <br />
+                  <label> Last Name</label>
+                  <select name = "last_name" id = "last_name">
+                    <option></option>
+                    <option value="Skywalker">Skywalker</option>
+                    <option value="Vader">Vader</option>
+                    <option value="Kenobi">Kenobi</option>
+                    <option value="D2">D2</option>
+                    <option value="3P0">3P0</option>
+                  </select>
+                    <br />
+                    <label>Planet</label>
+                    <select name = "Planets" id = "species">
+                      <option></option>
+                      <option value="Tatooine">Tatooine</option>
+                      <option value="Coruscant">Coruscant</option>
+                      <option value="Alderaan">Alderaan</option>
+                      <option value="Naboo">Naboo</option>
+                      <option value="Bespin">Bespin</option>
+                    </select>
+                    <br />
+                    <label>Species</label>
+                    <select name = "species" id = "species">
+                      <option></option>
+                      <option value="Jawa">Jawa</option>
+                      <option value="Wookiee">Wookiee</option>
+                      <option value="Human">Human</option>
+                      <option value="Ewok">Ewok</option>
+                      <option value="Togruta"></option>
+                    </select>
+                    <br />
+                    <label>Transportation</label>
+                    <select name ="transportation" id ="transportation">
+                      <option></option>
+                      <option value="Landspeeder">Landspeeder</option>
+                      <option value="Skyhoper">Skyhoper</option>
+                      <option value="Sandcrawler">Sandcrawler</option>
+                      <option value="Snowspeeder">Snowspeeder</option>
+                      <option value="Speeder Bike">Speeder Bike</option>
+                    </select>
+                    <br />
+                    <input type="submit" value="Submit" />
+                    <input type="reset" value="Reset" />
+                  </form>
+        </div>
+    </main>
+    <footer>© 2023 The Pressures Of, LLC.</footer>
   </body>
 </html>
